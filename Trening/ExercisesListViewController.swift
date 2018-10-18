@@ -50,6 +50,33 @@ class ExercisesListViewController: UIViewController {
 //        self.tableView.becomeFirstResponder()
         self.searchBar.endEditing(true)
     }
+     // Logic to add new exercise passed from ExerciseDetailsController
+    @IBAction func unwindToExercisesTableView(sender: UIStoryboardSegue ) {
+        if let sourceViewController = sender.source as?
+            ExerciseDetailsController,
+            let exercise = sourceViewController.exercise {
+
+            // Add a new exercise to exercises array
+            exercises.append(exercise)
+            
+            //Apply filter on new exercise title
+            let newIndexPath = IndexPath(row: selectedExercises.count, section: 0)
+            if let searchBarText = searchBar.text {
+                if searchBarText.isEmpty {
+                    selectedExercises.append(exercise)
+                    tableView.insertRows(at: [newIndexPath], with: .automatic)
+                } else if exercise.title.lowercased().contains(searchBarText.lowercased()) {
+                    selectedExercises.append(exercise)
+                    tableView.insertRows(at: [newIndexPath], with: .automatic)
+                }
+            } else {
+                let newIndexPath = IndexPath(row: selectedExercises.count, section: 0)
+                selectedExercises.append(exercise)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
+            
+        }
+    }
     
 }
 

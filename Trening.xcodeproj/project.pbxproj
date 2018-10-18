@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D385E332176670000A29C72 /* ExerciseDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D385E322176670000A29C72 /* ExerciseDetailsController.swift */; };
 		2DB5C71521661448006A050E /* ExercisesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5C71421661448006A050E /* ExercisesListViewController.swift */; };
 		2DB5C717216617DA006A050E /* ExerciseCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5C716216617DA006A050E /* ExerciseCellViewController.swift */; };
 		2DB5C719216618B0006A050E /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5C718216618B0006A050E /* Exercise.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D385E322176670000A29C72 /* ExerciseDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsController.swift; sourceTree = "<group>"; };
 		2DB5C71421661448006A050E /* ExercisesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesListViewController.swift; sourceTree = "<group>"; };
 		2DB5C716216617DA006A050E /* ExerciseCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewController.swift; sourceTree = "<group>"; };
 		2DB5C718216618B0006A050E /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				2DE5FF72216527F100DC5F3E /* AppDelegate.swift */,
 				2DB5C718216618B0006A050E /* Exercise.swift */,
+				2D385E322176670000A29C72 /* ExerciseDetailsController.swift */,
 				2DB5C716216617DA006A050E /* ExerciseCellViewController.swift */,
 				2DB5C71421661448006A050E /* ExercisesListViewController.swift */,
 				2DE5FF76216527F100DC5F3E /* SecondViewController.swift */,
@@ -153,6 +156,7 @@
 				2DE5FF73216527F100DC5F3E /* AppDelegate.swift in Sources */,
 				2DB5C717216617DA006A050E /* ExerciseCellViewController.swift in Sources */,
 				2DB5C71521661448006A050E /* ExercisesListViewController.swift in Sources */,
+				2D385E332176670000A29C72 /* ExerciseDetailsController.swift in Sources */,
 				2DE5FF8721653F4900DC5F3E /* ThirdViewController.swift in Sources */,
 				2DB5C719216618B0006A050E /* Exercise.swift in Sources */,
 			);

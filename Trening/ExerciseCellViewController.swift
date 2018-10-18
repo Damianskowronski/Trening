@@ -14,7 +14,6 @@ class ExerciseCellViewController: UITableViewCell {
     
     func setExercise(exercise: Exercise) {
         exerciseName.text = exercise.title
-        
     }
     
 }
